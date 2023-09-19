@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import  { ComplexNavbar }  from "./components/Navbar";
+import React from "react";
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom";
+import Footer from "./components/Footer";
+import Sec1 from "./components/Sec1";
+import Sec2 from "./components/Sec2";
+import Sec3 from "./components/Sec3";
+import Sec4 from "./components/Sec4";
+import Sec6 from "./components/Sec6";
+import Sec7 from "./components/Sec7";
+
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <>
+        <Sec1 />
+        <Sec2 />
+        <Sec3 />
+        <Sec4 />
+        <Sec6 />
+        <Sec7 />
+      
+      </>
+    ),
+  },
+  {
+    path: "about",
+    element: <div>about</div>,
+  },
+  {
+    path: "*",
+    element: <div>404 Not Found</div>,
+  },
+]);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ComplexNavbar />
+      <RouterProvider router={router} />
+      <Footer />
     </div>
   );
 }
