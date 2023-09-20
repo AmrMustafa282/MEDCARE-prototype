@@ -56,7 +56,7 @@ export function CarouselCustomNavigation() {
         </IconButton>
       )}
 
-      className="rounded-[40px] rounded-tr-none   w-[50vw]  lg:w-[30vw] "
+      className="rounded-[40px] rounded-tr-none mx-auto   w-[90vw] md:w-[50vw]  lg:w-[30vw] "
       
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className=" absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">

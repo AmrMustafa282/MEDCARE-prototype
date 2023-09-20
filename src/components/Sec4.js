@@ -5,7 +5,7 @@ import React from 'react'
 const Sec4 = () => {
   return (
     <div className='overflow-hidden flex justify-center items-center'>
-      <div className='py-20 container mx-auto sec4Img flex justify-center items-center rounded-3xl'>
+      <div className='py-0 md:py-20 container mx-auto sec4Img flex justify-center items-center rounded-3xl'>
         <div className=' relative  flex flex-col lg:flex-row gap-20 lg:gap-5 justify-center items-center'>
           <div className='py-12 -mb-10 self-center w-[75%] lg:w-auto relative z-10 beforeBorder  bg-white rounded-3xl p-8 flex flex-col gap-4'>
             <h3 className='text-2xl font-bold  text-purple text-center'>Book Appointment</h3>

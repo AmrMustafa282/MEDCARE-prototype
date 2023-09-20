@@ -5,23 +5,22 @@ const Sec2 = () => {
   return (
     <div className='relative  pt-20 pb-36 bg-[#FFFFFF]'>
       <div className='container mx-auto flex justify-center items-center mt-32  '>
-        <div className='flex flex-col lg:flex-row gap-20 mr-auto relative z-20'>
-          <ul className=' grid grid-cols-2 gap-8 centerImg  2xl:after:top-[53%] 2xl:after:left-[47%]  xl:after:top-[52%] xl:after:left-[47%] lg:after:top-[47%] lg:after:left-[45%] md:after:top-[53%] md:after:left-[47%] sm:after:top-[53%] sm:after:left-[46%] after:top-[45%] after:left-[44%] relative '>
+        <div className=' flex flex-col lg:flex-row gap-20 mr-auto relative z-20'>
+          <ul className='pr-6 lg:pr-0 grid grid-cols-2 gap-8 centerImg  2xl:after:top-[49%] 2xl:after:left-[46%]  xl:after:top-[45%] xl:after:left-[46%] lg:after:top-[42%] lg:after:left-[44%] md:after:top-[52%] md:after:left-[45%] sm:after:top-[49%] sm:after:left-[44%] after:top-[43%] after:left-[41%]  relative '>
             <li className='mt-auto'><img className='rounded-[20%] rounded-tl-none w-[75%] ml-auto ' src={require('../Assets/pic1.jpg')} alt="" /></li>
             <li className='mt-auto'><img className='rounded-[20%] rounded-tr-none ' src={require('../Assets/pic2.jpg')} alt="" /></li>
             <li><img className='rounded-[20%] rounded-bl-none w-[65%] ml-auto' src={require('../Assets/pic3.jpg')} alt="" /></li>
             <li>
-              <div className=' flex flex-col justify-start items-start md:pl-12 md:pt-12 md:pb-20 lg:w-[80%] lg:h-[80%] lg:pl-6 lg:pt-6 xl:w-[80%] xl:h-[100%] xl:pl-10 xl:pt-10 pl-4 pt-4 pb-12 rounded-[20%] rounded-br-none text-center afterBorder relative bg-[#12618f42] my-auto w-[75%]  '>
-                <h1 className='text-blue font-extrabold text-8xl'>20</h1>
-                <p className='text-_2darkblue font-semibold'>Year Experience</p>
+              <div className=' flex flex-col justify-start items-start md:pl-12 md:pt-12 md:pb-20 lg:w-[90%] lg:h-[80%] lg:pl-6 lg:pt-6 xl:w-[85%] xl:h-[90%] 2xl:w-[85%] 2xl:h-[100%] xl:pl-10 xl:pt-10 pl-4 pt-4 pb-12 rounded-[20%] rounded-br-none text-center afterBorder relative bg-lpurple my-auto w-[90%] h-[90%]  sm:w-[75%]  '>
+                <h1 className='text-purple font-extrabold text-8xl'>20</h1>
+                <p className='text-darkblue font-semibold'>Year Experience</p>
               </div>
             </li>
           </ul>
 
           <div className='flex flex-col justify-center items-center lg:items-start gap-4 '>
             <p className='text-orangeMain font-bold textCoverOrange relative inline px-2'>About Us</p>
-            <h1 className='text-4xl text-purple font-bold'>The Great Place Of</h1>
-            <h1 className='text-4xl text-purple font-bold'> Medical Hospital Center</h1>
+            <h1 className='text-4xl text-purple font-bold pr-0 lg:pr-20 text-center lg:text-start'>The Great Place Of Medical Hospital Center</h1>
             <p className='w-96'>We provide the special tips and advice’s of heath care treatment and
               high level of best technology involve in the our hospital.</p>
             <div className='grid grid-cols-2 gap-8'>

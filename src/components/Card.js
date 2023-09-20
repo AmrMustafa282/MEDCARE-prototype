@@ -63,8 +63,7 @@ export function BlogCard(props) {
         </Typography>
 
         <Typography
-          as="a"
-          href="#"
+
           variant="small"
           color="blue-gray"
           className="font-bold text-llblue "

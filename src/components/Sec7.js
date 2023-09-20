@@ -10,7 +10,7 @@ const Sec7 = () => {
             <h6 className='px-4 pb-1 text-orangeMain text-xl font-semibold my-8 textCoverOrange relative inline '>Latest News</h6>
             <h1 className='text-purple text-3xl md:text-5xl font-bold'>Our Latest News</h1>
           </div>
-          <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center mt-20 '>
+          <div className='grid grid-cols-1  xl:grid-cols-3 gap-4 place-items-center mt-20 relative z-10'>
             <Card img={require("../Assets/b2.jpg")} docImg={require("../Assets/doc1.jpg")} name="Jhon deo" date="21 July 2021" title="In this hospital there are special surgeon" />
             <Card img={require("../Assets/b1.jpg")} docImg={require("../Assets/doc4.jpg")} name="Peter Packer" date="20 July 2021" title="Can you get a diflucan prescription online?" />
             <Card img={require("../Assets/blog3.jpg")} docImg={require("../Assets/doc3.jpg")} name="Sonar Moyna" date="19 July 2021" title="Why is Skin Surgeon Considered Underrated" />

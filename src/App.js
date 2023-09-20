@@ -11,6 +11,7 @@ import Sec3 from "./components/Sec3";
 import Sec4 from "./components/Sec4";
 import Sec6 from "./components/Sec6";
 import Sec7 from "./components/Sec7";
+import ScrollToTopButton from "./components/Arrow";
 
 
 
@@ -19,15 +20,15 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <>
+      <div className="">
         <Sec1 />
         <Sec2 />
         <Sec3 />
         <Sec4 />
         <Sec6 />
         <Sec7 />
-      
-      </>
+        <ScrollToTopButton  />
+      </div>
     ),
   },
   {

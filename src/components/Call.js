@@ -11,7 +11,7 @@ const Call = () => {
       </div>
       <div>
         <div className='text-orangeMain font-semibold'>Contact Us</div>
-        <div className='text-blue font-bold'>+01 123 456 7890</div>
+        <div className='text-blue font-bold tracking-tighter'>+02 123 456 7890</div>
       </div>
     </div>
   )

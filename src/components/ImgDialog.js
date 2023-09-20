@@ -9,6 +9,7 @@ import {
   IconButton,
   Typography,
   Card,
+  Tooltip,
 } from "@material-tailwind/react";
 
 export function DialogWithImage(props) {
@@ -32,13 +33,15 @@ export function DialogWithImage(props) {
       </Card>
       <Dialog size="xl" open={open} handler={handleOpen}>
         <DialogHeader className="justify-between">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 ">
+            
             <Avatar
               size="sm"
               variant="circular"
               alt="tania andrew"
-              src={props.docImage }
-            />
+              src={props.docImage}
+              />
+             
             <div className="-mt-px flex flex-col">
               <Typography
                 variant="small"

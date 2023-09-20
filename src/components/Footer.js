@@ -9,13 +9,13 @@ const Footer = () => {
   
   return (
     <>
-      <div className='footerImg mt-20 2xl:pt-20 relative '>
+      <div className='footerImg mt-20 px-4 2xl:pt-20 relative '>
         
         <div className='container mx-auto'>
           <div className='text-black pt-32 '>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 '>
+            <div className='gap-12 lg:gap-0  lg:pl-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 '>
 
-              <div className='flex flex-col justify-between items-start '>
+              <div className='flex flex-col gap-6 justify-between items-start '>
                 <div className='pt-2'><img src={require('../Assets/logo.png.webp')} alt="" /></div>
                 <p className='pr-4'>Lorem ipsum is dolor sit amet, csectetur adipiscing elit, dolore smod tempor incididunt ut labore et.</p>
                 <div>
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
 
         
-        <div className="after:content-[''] z-0 hidden xl:block absolute right-20 bottom-20  animate-[swipe_3s_ease-in-out_infinite]"><img src={require('../Assets/anmi1.png')} alt="" />
+        <div className="after:content-[''] z-0 hidden 2xl:block absolute right-20 bottom-20  animate-[swipe_3s_ease-in-out_infinite]"><img src={require('../Assets/anmi1.png')} alt="" />
         </div>
         <div className="after:content-[''] z-0 hidden xl:block absolute left-20 top-20  animate-[swipe_5s_ease-in-out_infinite]">
           <img src={require('../Assets/anmi1.png')} alt="" />
@@ -82,7 +82,7 @@ const Footer = () => {
         <div className="after:content-[''] z-0 hidden xl:block absolute right-20 top-40  animate-[spin_6s_ease_infinite]">
           <img src={require('../Assets/anmi3.png')} alt="" />
         </div>
-        <div className="after:content-[''] z-0 hidden xl:block absolute left-20 bottom-40  animate-[bounce_5s_ease-in-out_infinite]">
+        <div className="after:content-[''] z-0 hidden 2xl:block absolute left-20 bottom-40  animate-[bounce_5s_ease-in-out_infinite]">
           <img src={require('../Assets/anmi2.png')} alt="" />
         </div>
 
