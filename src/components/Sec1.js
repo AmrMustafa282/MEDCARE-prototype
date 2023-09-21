@@ -1,9 +1,11 @@
 import { Button } from '@material-tailwind/react'
 import React from 'react'
 
+
 const Sec1 = () => {
+
   return (
-    <div className='Sec1Img flex justify-center  items-center relative '>
+    <div className='Sec1Img flex justify-center  items-center relative mb-12'>
       <div className='container mx-auto lg:mt-24 mt-20  flex flex-col lg:flex-row  justify-center items-center'>
         <div className='relative z-10 flex flex-col gap-4 items-start px-8 mt-12 lg:mt-0 lg:pl-0'>
           <p className='text-blue font-bold pl-1 text-xl '>We Provide All Health Care Solution</p>
@@ -12,7 +14,8 @@ const Sec1 = () => {
             And Take Care To Of
             Your Health
           </h1>
-          <Button className='bg-orangeMain mt-8 w-full lg:w-auto'>Read More</Button>
+          <Button
+            className='bg-orangeMain mt-8 w-full lg:w-auto'>Read More</Button>
         </div>
         <div>
           <div className='animate-[bouncec_5s_ease_infinite] relative z-10 '>

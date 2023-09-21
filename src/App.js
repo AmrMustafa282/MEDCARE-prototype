@@ -1,8 +1,8 @@
-import  { ComplexNavbar }  from "./components/Navbar";
-import React from "react";
+import { ComplexNavbar } from "./components/Navbar";
+import React, { useEffect } from "react";
 import {
   createBrowserRouter,
-  RouterProvider
+  RouterProvider,
 } from "react-router-dom";
 import Footer from "./components/Footer";
 import Sec1 from "./components/Sec1";
@@ -12,6 +12,9 @@ import Sec4 from "./components/Sec4";
 import Sec6 from "./components/Sec6";
 import Sec7 from "./components/Sec7";
 import ScrollToTopButton from "./components/Arrow";
+import  Reveal  from "./components/Reveal";
+
+
 
 
 
@@ -22,12 +25,22 @@ const router = createBrowserRouter([
     element: (
       <div className="">
         <Sec1 />
-        <Sec2 />
-        <Sec3 />
-        <Sec4 />
-        <Sec6 />
-        <Sec7 />
-        <ScrollToTopButton  />
+        <Reveal>
+          <Sec2 />
+        </Reveal>
+        <Reveal>
+          <Sec3 />
+        </Reveal>
+        <Reveal>
+          <Sec4 />
+        </Reveal>
+        <Reveal>
+          <Sec6 />
+        </Reveal>
+        <Reveal>
+          <Sec7 />
+        </Reveal>
+        <ScrollToTopButton />
       </div>
     ),
   },
@@ -36,18 +49,37 @@ const router = createBrowserRouter([
     element: <div>about</div>,
   },
   {
+    path: "users",
+    element: <div>users</div>,
+  },
+  {
     path: "*",
     element: <div>404 Not Found</div>,
   },
 ]);
 
 function App() {
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Add smooth scrolling behavior
+    });
+  };
+
+  useEffect(() => {
+    handleScrollToTop()
+  },[])
+
   return (
+    
+   
     <div className="App">
       <ComplexNavbar />
       <RouterProvider router={router} />
       <Footer />
     </div>
+    
   );
 }
 

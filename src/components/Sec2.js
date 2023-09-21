@@ -4,7 +4,7 @@ import React from 'react'
 const Sec2 = () => {
   return (
     <div className='relative  pt-20 pb-36 bg-[#FFFFFF]'>
-      <div className='container mx-auto flex justify-center items-center mt-32  '>
+      <div className='container mx-auto flex justify-center items-center   '>
         <div className=' flex flex-col lg:flex-row gap-20 mr-auto relative z-20'>
           <ul className='pr-6 lg:pr-0 grid grid-cols-2 gap-8 centerImg  2xl:after:top-[49%] 2xl:after:left-[46%]  xl:after:top-[45%] xl:after:left-[46%] lg:after:top-[42%] lg:after:left-[44%] md:after:top-[52%] md:after:left-[45%] sm:after:top-[49%] sm:after:left-[44%] after:top-[43%] after:left-[41%]  relative '>
             <li className='mt-auto'><img className='rounded-[20%] rounded-tl-none w-[75%] ml-auto ' src={require('../Assets/pic1.jpg')} alt="" /></li>
